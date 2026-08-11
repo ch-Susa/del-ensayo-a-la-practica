@@ -338,3 +338,97 @@ body {
         height: 115px;
     }
 }
+.pagina-420 .nav-bar {
+    background: #e9ffe9;
+}
+
+.pagina-420 .nav-link:hover,
+.pagina-420 .nav-link.active {
+    color: #228b3d;
+}
+
+.seccion-420 {
+    max-width: 650px;
+    margin: 15px auto;
+    padding: 5px 15px 25px;
+    border-radius: 30px;
+    background: #edfff0;
+}
+
+.titulo-420 {
+    color: #333;
+    text-align: center;
+    font-size: 55px;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.descripcion-420 {
+    max-width: 500px;
+    margin: 0 auto 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.productos-420 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 5px;
+}
+
+.producto-verde {
+    background: #a8e9b3;
+    border-radius: 25px;
+    padding: 7px;
+}
+
+.producto-verde img {
+    height: 120px;
+}
+
+.producto-verde div {
+    padding: 4px;
+}
+
+.producto-verde button {
+    border: 1px solid #777;
+    border-radius: 15px;
+    background: white;
+    padding: 2px 9px;
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.producto-verde button:hover {
+    background: #d8f8dc;
+}
+
+.contacto-verde {
+    background: #e9ffe9;
+}
+
+@media (max-width: 500px) {
+    .seccion-420 {
+        margin: 15px;
+        padding: 5px 10px 25px;
+    }
+
+    .titulo-420 {
+        font-size: 50px;
+    }
+
+    .descripcion-420 {
+        font-size: 11px;
+        max-width: 280px;
+    }
+
+    .productos-420 {
+        gap: 12px;
+    }
+
+    .producto-verde img {
+        height: 110px;
+    }
+}
