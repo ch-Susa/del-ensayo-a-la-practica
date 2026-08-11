@@ -8,41 +8,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav-bar bg-blue">
-        <div class="container-fluid">
-        <span class="navbar-brand text-dark">Dulces Antojos</span>
-        <a href="#inicio">Inicio</a>
-        <a href="#">Catálogo</a>
-        <a href="#">Contáctanos</a>
+
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">Dulces Antojos</a>
+            <a href="#inicio" class="nav-link active">Inicio</a>
+            <a href="#catalogo" class="nav-link">Catálogo</a>
+            <a href="#contacto" class="nav-link">Contáctanos</a>
+            <button class="btn btn-outline-success">420</button>
         </div>
     </nav>
-    
-    <section id="inicio">
-        <div class="container d-flex justify-content-center align-items-center vh-100">
-            <div class="card shadow p-4" id="tarjeta">
-                <h2>Dulces Momentos</h2>
-                <h4>Hechos para ti</h4>
-                <a href="#"><button class="btn btn-success">Ver Catálogo</button></a>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-card">
+                <div class="hero-text">
+                    <h1>Dulces<br>Momentos</h1>
+                    <p>Hechos para ti</p>
+                    <button class="btn-catalogo" onclick="irAlCatalogo()">
+                        Ver Catálogo
+                    </button>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Pastel">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="promocion">
-    <div class="tarjetas">
-        <div class="tarjeta">
-            
-        </div>
-    
-        <div class="tarjeta">
+        <section id="catalogo" class="promociones">
+            <h2><span>★</span> Promociones</h2>
 
-        </div>
-    
-        <div class="tarjeta">
+            <div class="productos">
 
-        </div>
-    </div>
-    </section>
-    
-    <script href="JS/script.js"></script>
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=300&q=80" alt="Cupcakes">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Cupcakes</h3>
+                        <p>$2.000</p>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=300&q=80" alt="Donas">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Donas</h3>
+                        <p>$600</p>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=300&q=80" alt="Torta de fresa">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Torta de fresa</h3>
+                        <p>$5.000</p>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=300&q=80" alt="Red Velvet">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Brownies</h3>
+                        <p>$10.00</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes algún antojo?</p>
+            <a href=""><button>Escríbenos</button></a>
+        </section>
+    </main>
+
+    <script src="/del-ensayo-a-la-practica/JS/script.js"></script>
 </body>
 </html>
